@@ -1,0 +1,77 @@
+.footer {
+  color: $base-white;
+  background-color: $base-mine-shaft;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 273px;
+}
+
+.footer__wrapper-info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 700px;
+}
+
+.social {
+
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  opacity: 65%;
+}
+
+.about {
+  width: 142px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info {
+  width: 153px;
+}
+
+.catalog {
+  width: 150px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts {
+  width: 140px;
+}
+
+.contacts__phone {
+  color: $base-white;
+}
+
+.contacts__phone:hover,
+.contacts__phone:focus {
+  opacity: 0.5;
+}

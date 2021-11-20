@@ -1,0 +1,28 @@
+.header {
+  background-color: rgba(30, 9, 6, 0.15);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 110px;
+}
+
+.header__control {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 140px;
+}
+.header__control--link {
+  display: block;
+  padding: 10px;
+}

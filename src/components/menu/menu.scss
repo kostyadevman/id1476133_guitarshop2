@@ -1,0 +1,24 @@
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 470px;
+  max-width: 700px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--footer {
+    flex-direction: column;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 25px 0;
+
+  &--footer {
+    padding: 0;
+  }
+}
