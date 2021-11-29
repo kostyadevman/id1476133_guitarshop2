@@ -4,15 +4,17 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "1.6.1",
-    "classnames": "^2.3.1",
+    "classnames": "2.3.1",
+    "focus-trap-react": "8.8.2",
     "history": "4.10.1",
     "node-sass": "6.0.1",
     "normalize.css": "8.0.1",
     "prop-types": "15.7.2",
     "react": "17.0.2",
+    "react-breadcrumbs": "2.1.7",
     "react-dom": "17.0.2",
-    "react-flatpickr": "3.10.7",
     "react-helmet": "6.1.0",
+    "react-paginate": "7.1.5",
     "react-redux": "7.2.4",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
@@ -25,7 +27,7 @@
     "build": "react-scripts build",
     "eslint": "eslint --ext .jsx --ext .js src/",
     "eslint-fix": "eslint --fix --ext .jsx --ext .js src/",
-    "test": "npm run eslint && npm run test.jest",
+    "test": "npm run eslint",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

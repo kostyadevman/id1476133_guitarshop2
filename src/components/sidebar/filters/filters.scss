@@ -1,0 +1,128 @@
+.filters__title {
+  font-family: $base-f;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+.filters__title span {
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.filters__fieldset {
+  padding: 34px 0 33px 0;
+  border-top: .7px solid $special-alto;
+  border-bottom: .7px solid $special-alto;
+}
+
+.filters__fieldset--type,
+.filters__fieldset--strings {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.filters__fieldset--strings {
+  border-bottom: none;
+}
+
+.filters__label {
+  display: flex;
+  align-items: center;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.filters__price-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.filters__price-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 97px;
+  width: 14px;
+  height: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/icon_line.svg");
+}
+
+.filters__price {
+  width: 84px;
+  height: 31px;
+  text-align: center;
+  padding: 10px 5px;
+  border: .7px solid $special-silver-chalice;
+  border-radius: 2px;
+  font-family: $base-f;
+  color: $base-black;
+
+  &--min {
+    margin: 0 40px 0 0;
+  }
+}
+
+.filters__price::placeholder {
+  color: rgba($base-black, .6);
+}
+
+
+.filters__checkbox + .filters__label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 26px;
+  margin: 0 16px -4px 0;
+  border: 0.7px solid $special-silver-chalice;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filters__checkbox + .filters__label {
+  font-family: $base-f;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 17px 0;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filters__checkbox:checked + .filters__label:before {
+  background-image: url("../../../img/check-mark.svg");
+  cursor: pointer;
+}
+
+.filters__checkbox:disabled + .filters__label:before {
+  background-image: url("../../../img/check-disabled.svg");
+  border:none;
+  cursor: not-allowed
+}
+
+.filters__checkbox:disabled + .filters__label {
+  color: $special-alto2;
+  cursor: not-allowed;
+}
+
+.filters__checkbox:hover + .filters__label:before,
+.filters__checkbox:focus + .filters__label:before {
+  border-color: $special-scorpion;
+}
+
+.filters__checkbox:hover + .filters__label:active:before {
+  border-color: $special-silver;
+}
+
+

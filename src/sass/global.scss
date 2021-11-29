@@ -8,9 +8,21 @@ html {
   height: 100%;
 }
 
+body, html {
+  overflow-y: auto;
+  -ms-overflow-style: unset;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
 .body {
   align-content: start;
   font-family: $base-f;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $base-black;
@@ -83,11 +95,53 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1020px;
+  width: 1020px;
   padding-left: 40px;
   padding-right: 40px;
+}
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  font-family: $base-f;
+  font-size: 12px;
+  line-height: 14px;
+  color: $base-white;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &--primary {
+    background-color: $special-mango-tango;
+    color: $base-white;
+  }
+
+  &--secondary {
+    background-color: $special-silver;
+  }
 }
 
 
+.button--primary:hover,
+.button--primary:focus {
+  background-color: $special-yellow-orange;
+  color: $base-white;
+}
+
+.button--primary:active {
+  background-color: $special-brandy-punch;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: $special-scorpion;
+}
+
+.button--secondary:active {
+  background-color: $special-silver-chalice;
+}

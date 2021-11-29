@@ -1,0 +1,82 @@
+.card {
+  width: 220px;
+  height: 304px;
+  padding: 20px 14px;
+  border: 1px solid $base-alto;
+}
+
+.card__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card__rating-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 3px 0 0 0;
+}
+
+.card__img {
+  display: block;
+  width: 68px;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.card__rating {
+  margin: 0 0 0 5px;
+  font-family: $special-f;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: $special-silver-chalice;
+}
+
+.card__info {
+  font-family: $base-f;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0 0 0;
+}
+
+.card__name {
+  font-family: $base-bold-f;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+}
+
+.card__detail,
+.card__buy {
+  display: flex;
+  align-items: center;
+  font-family: $base-f;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.card__detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 87px;
+  height: 23px;
+}
+
+.card__buy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 87px;
+  height: 23px;
+}
+
+.card__buy span {
+  margin: 2px 0 0 5px;
+}
+
+

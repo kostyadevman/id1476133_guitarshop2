@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($special-scorpion, .6);
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 21px;
+  right: 18px;
+  background-color: $base-white;
+  border:none;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  opacity: .7;
+}
+
+.modal__close:active {
+  opacity: .5;
+}

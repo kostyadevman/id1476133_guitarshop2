@@ -4,6 +4,20 @@
 @import "global";
 @import "../components/layout/header/header";
 @import "../components/menu/menu";
+@import "../components/pages/page-not-found/page-not-found";
+@import "../components/pages/catalog/catalog";
+@import "../components/my-breadcrumbs/my-breadcrumbs";
+@import "page";
+@import "../components/sidebar/sidebar";
+@import "../components/sidebar/filters/filters";
+@import "../components/sort/sort";
+@import "../components/card/card";
+@import "../components/pages/cart/cart";
 @import "../components/layout/footer/footer";
+@import "../components/modal/modal";
+@import "../components/popups/popup-add/popup-add";
+@import "../components/popups/popup-success/popup-success";
+@import "../components/popups/popup-delete/popup-delete";
+@import "../components/popups/stats/stats";
 
 

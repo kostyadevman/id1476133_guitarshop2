@@ -1,0 +1,36 @@
+.breadcrumbs {
+  font-family: $base-f;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+}
+
+.breadcrumbs__crumb {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: .02em;
+  color: $special-tundora;
+
+  &--active {
+    color: $special-silver;
+    cursor: auto;
+  }
+  &:hover,
+  &:focus {
+    opacity: .7;
+  }
+  &:active {
+    opacity: .5;
+  }
+}
+
+.breadcrumbs__crumb--active:hover,
+.breadcrumbs__crumb--active:focus,
+.breadcrumbs__crumb--active:active {
+  opacity: 1;
+  color: $special-silver;
+  cursor: auto;
+}
+
+.breadcrumbs__separator {
+  margin: 0 11px 0 14px;
+}

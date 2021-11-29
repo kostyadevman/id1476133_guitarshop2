@@ -1,0 +1,56 @@
+.stats__name {
+  margin: 0 0 14px 0;
+  font-family: $base-f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.stats__name span {
+  margin-left: 5px;
+  letter-spacing: .05em;
+}
+
+.stats__code {
+  margin: 0 0 7px 0;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.stats__code span {
+  letter-spacing: .05em;
+}
+
+.stats__price {
+  margin: 0;
+  padding: 0;
+  font-family: $base-bold-f;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: .1em;
+}
+
+.stats__price span {
+  margin: 0 0 0 3px;
+  padding: 0;
+  font-family: $base-f;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: .1em;
+}
+
+.stats__strings {
+  margin: 0 0 18px 0;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}

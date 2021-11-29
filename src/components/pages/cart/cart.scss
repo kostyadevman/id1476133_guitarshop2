@@ -1,0 +1,255 @@
+.cart {
+  margin: 238px 0 170px 0;
+}
+
+.cart__title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+  font-family: $base-f;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: $base-black;
+  letter-spacing: 0.03em;
+}
+
+.cart__list {
+  position: relative;
+  margin: 27px 0 38px 0;
+  padding: 0;
+}
+
+.cart__close {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  background-color: $base-white;
+  border:none;
+}
+
+.cart__close:hover,
+.cart__close:focus {
+  opacity: .7;
+}
+
+.cart__close:active {
+  opacity: .5;
+}
+
+.cart__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 44px;
+  border-top: 1px solid $base-alto;
+}
+
+.cart__item:last-child {
+  border-bottom: 1px solid $base-alto;
+}
+
+.cart__strings {
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.cart__list {
+  list-style: none;
+}
+
+.cart__img {
+  display: block;
+  width: 48px;
+  height: 124px;
+  margin: 0;
+
+}
+
+.cart__wrapper-info {
+  align-self: flex-start;
+  min-width: 300px;
+}
+
+.cart__name {
+  margin: 0 0 14px 0;
+  font-family: $base-f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: .09em;
+}
+
+.cart__name span {
+  margin-left: 5px;
+  letter-spacing: .05em;
+}
+
+.cart__code {
+  margin: 0 0 7px 0;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.cart__code span {
+  letter-spacing: .05em;
+}
+
+.cart__price {
+  margin: 0;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.cart__wrap-control {
+  align-self: flex-start;
+  min-width: 100px;
+  margin: 20px 0 0 0;
+}
+.cart__delete {
+  width: 28px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $special-silver-chalice;
+  line-height: normal;
+  background-color: $base-white;
+}
+
+.cart__add {
+  width: 28px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $special-silver-chalice;
+  line-height: normal;
+  background-color: $base-white;
+}
+
+.cart__amount {
+  width: 28px;
+  height: 30px;
+  margin: 0 -1px 0 -1px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid $special-silver-chalice;
+}
+
+.cart__item-sum {
+  min-width: 100px;
+  margin: 0;
+  padding: 0;
+  font-family: $base-bold-f;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: .1em;
+}
+
+.cart__order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__wrapper-promo,
+.cart__wrapper-sum {
+  position: relative;
+  flex-grow: 1;
+  max-width: 45%;
+  height: 95px;
+
+}
+
+.cart__text {
+  font-family: $base-bold-f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.09em;
+  color: $base-black;
+}
+
+.cart__hint {
+  font-family: $base-f;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+}
+
+.cart__promo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  height: 36px;
+  padding: 10px;
+  border: 2px solid $special-alto;
+  text-align: center;
+  font-family: $base-f;
+  font-size: 16px;
+  line-height: 15px;
+
+  &--invalid {
+    border: 2px solid $base-invalid;
+  }
+}
+
+.cart__invalid-text {
+  position: absolute;
+  bottom: 34px;
+  font-family: $special-f;
+  font-size: 12px;
+  color: $base-invalid;
+}
+
+.cart__button-order,
+.cart__button-promo {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+.cart__button-promo {
+  position: absolute;
+  bottom: 0;
+  right: 19px;
+  letter-spacing: .07em;
+}
+
+.cart__button-order {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cart__total-sum {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-family: $base-bold-f;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: .07em;
+}
+
+.cart__empty {
+  text-align: center;
+  font-family: $base-bold-f;
+  font-weight: 700;
+  font-size: 27px;
+  color: $special-dove-gray;
+}
