@@ -2,6 +2,7 @@ import React from 'react';
 import {useDispatch} from "react-redux";
 import {setCurrentItem, setPopupOpen} from "../../store/action";
 import {PopupType} from "../../const";
+import {GuitarPropType} from "../../data/guitars";
 
 const Card = ({item}) => {
 
@@ -47,7 +48,7 @@ const Card = ({item}) => {
 };
 
 Card.propTypes = {
-
+  item: GuitarPropType
 };
 
 export default Card;

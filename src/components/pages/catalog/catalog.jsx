@@ -67,7 +67,7 @@ const  Catalog = () => {
   return (
     <section className="catalog" ref={catalogRef}>
       <h2 className="catalog__title">Каталог гитар</h2>
-      <MyBreadcrumbs />
+        <MyBreadcrumbs BreadCrumbsClassName="catalog__breadcrumbs breadcrumbs"/>
       <Breadcrumb data={{title: 'Главная', pathname: AppRoute.ROOT}} />
       <Breadcrumb data={{title: 'Каталог', pathname: AppRoute.ROOT}} />
       <SideBar />

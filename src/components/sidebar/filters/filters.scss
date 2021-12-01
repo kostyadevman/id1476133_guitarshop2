@@ -1,7 +1,7 @@
 .filters__title {
   font-family: $base-f;
   font-weight: 700;
-  margin: 0 0 28px 0;
+  margin: 0 0 23px 0;
   padding: 0;
   font-size: 18px;
   line-height: 21px;
@@ -14,7 +14,7 @@
 }
 
 .filters__fieldset {
-  padding: 34px 0 33px 0;
+  padding: 31px 0 28px 0;
   border-top: .7px solid $special-alto;
   border-bottom: .7px solid $special-alto;
 }
@@ -27,6 +27,7 @@
 }
 
 .filters__fieldset--strings {
+  padding: 28px 0 0 0;
   border-bottom: none;
 }
 
@@ -60,7 +61,7 @@
 
 .filters__price {
   width: 84px;
-  height: 31px;
+  height: 28px;
   text-align: center;
   padding: 10px 5px;
   border: .7px solid $special-silver-chalice;
@@ -95,7 +96,7 @@
   font-family: $base-f;
   font-size: 16px;
   line-height: 19px;
-  margin: 0 0 17px 0;
+  margin: 0 0 14px 0;
   letter-spacing: 0.03em;
   cursor: pointer;
 }

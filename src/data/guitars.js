@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import acoustic from '../img/acoustic_1.png';
 import electro from '../img/electro_1.png';
 import electro2 from '../img/electro_2.png';
@@ -277,3 +278,14 @@ export const Guitars = [
     img: ukulele
   }
 ]
+
+export const GuitarPropType = PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    code: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    strings: PropTypes.number.isRequired,
+    price: PropTypes.number.isRequired,
+    image: PropTypes.string,
+});

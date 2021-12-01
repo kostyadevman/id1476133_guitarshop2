@@ -6,7 +6,7 @@
     "sidebar sort"
     "sidebar items"
     "sidebar pagination";
-  grid-template-rows: auto auto 100px auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 208px auto;
   grid-column-gap: 30px;
   margin: 215px 0 138px 0;
@@ -26,6 +26,7 @@
 
 .catalog__breadcrumbs {
   grid-area: breadcrumbs;
+  margin: 20px 0 0 0;
 }
 
 .catalog__sidebar {

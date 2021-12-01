@@ -1,8 +1,10 @@
 .sort {
   display: flex;
+  align-items: center;
 }
 
 .sort__text {
+  flex-shrink: 1;
   margin: 0 10px 0 0;
   padding: 10px 0 10px 0;
   font-family: $base-f;
@@ -22,6 +24,7 @@
 
 .sort__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -34,6 +37,7 @@
 
 .sort__directions {
   display: flex;
+  flex-shrink: 1;
   margin: 0 5px 0 auto;
 }
 

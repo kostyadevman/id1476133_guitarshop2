@@ -9,7 +9,7 @@ import MyBreadcrumbs from "../../my-breadcrumbs/my-breadcrumbs";
 import {getDeletePopupOpen, getCartItems} from "../../../store/selectors";
 import {addCartItem, deleteCartItem, setCurrentItem, setPopupOpen} from "../../../store/action";
 import {capitalize} from "../../../utils";
-import {AppRoute, MAX_SALE, PopupType, PromoCode, promoCodes, PromoCodesMap} from "../../../const";
+import {AppRoute, MAX_SALE, NO_PROMOCODE, PopupType, PromoCode, promoCodes, PromoCodesMap} from "../../../const";
 
 const Cart = () => {
 
@@ -19,7 +19,7 @@ const Cart = () => {
   const isDeletePopupOpen = useSelector(getDeletePopupOpen);
 
   const [promoCode, setPromoCode] = useState(null);
-  const [isCodeValid, setIsCodeValid] = useState(`NO_PROMOCODE`);
+  const [isCodeValid, setIsCodeValid] = useState(NO_PROMOCODE);
 
   const getTotalSum = () => {
     return items.reduce((a, b) => (a + b.price * b.amount), 0)
@@ -84,7 +84,7 @@ const Cart = () => {
   }
 
   const _handlePromoFocus = () => {
-    setIsCodeValid(`NO_PROMOCODE`)
+    setIsCodeValid(NO_PROMOCODE)
   }
 
   useEffect(() => {
@@ -101,7 +101,7 @@ const Cart = () => {
   return (
     <section className="cart" ref={cartRef}>
       <h2 className="cart__title">Корзина</h2>
-      <MyBreadcrumbs />
+      <MyBreadcrumbs BreadCrumbsClassName="cart__breadcrumbs breadcrumbs"/>
       <Breadcrumb data={{title: 'Главная', pathname: AppRoute.ROOT}} />
       <Breadcrumb data={{title: 'Каталог', pathname: AppRoute.ROOT}} />
       <Breadcrumb data={{title: 'Оформляем', pathname: AppRoute.CART}} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from "../card/card";
+import {GuitarPropType} from "../../data/guitars";
 
 const CatalogList = ({currentItems}) => {
   return (
@@ -21,7 +22,7 @@ const CatalogList = ({currentItems}) => {
 };
 
 CatalogList.propTypes = {
-  currentItems: PropTypes.array.isRequired
+  currentItems: PropTypes.arrayOf(GuitarPropType).isRequired
 };
 
 export default CatalogList;
