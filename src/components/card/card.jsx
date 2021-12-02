@@ -29,7 +29,7 @@ const Card = ({item}) => {
         </div>
         <div className="card__info">
           <span className="card__name">{item.name}</span>
-          <span>{item.price.toLocaleString()} ₽</span>
+          <span className="card__price">{item.price.toLocaleString()} ₽</span>
         </div>
         <button className="button button--secondary card__detail" aria-label="Detail">Подробнее</button>
         <button

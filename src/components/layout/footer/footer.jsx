@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__wrapper-logo">
-            <Logo/>
+            <Logo className="footer__logo"/>
             <section className="footer__socials social">
               <h3 className="footer__title social__title visually-hidden">Социальные сети</h3>
               <ul className="social__list">

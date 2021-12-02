@@ -45,6 +45,13 @@
   justify-content: space-between;
 }
 
+.footer__logo path {
+  fill: $base-white;
+}
+
+.footer__logo line {
+  stroke: $base-white;
+}
 .footer__wrapper-info {
   display: flex;
   justify-content: space-between;
