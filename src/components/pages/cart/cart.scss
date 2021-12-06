@@ -30,6 +30,7 @@
   left: 0;
   background-color: $base-white;
   border:none;
+  cursor: pointer;
 }
 
 .cart__close:hover,
@@ -116,10 +117,13 @@
 }
 
 .cart__wrap-control {
+  display: flex;
   align-self: flex-start;
   min-width: 100px;
   margin: 20px 0 0 0;
+  color: $special-silver-chalice;
 }
+
 .cart__delete {
   width: 28px;
   height: 30px;
@@ -128,6 +132,7 @@
   border: 1px solid $special-silver-chalice;
   line-height: normal;
   background-color: $base-white;
+  cursor: pointer;
 }
 
 .cart__add {
@@ -138,6 +143,7 @@
   border: 1px solid $special-silver-chalice;
   line-height: normal;
   background-color: $base-white;
+  cursor: pointer;
 }
 
 .cart__amount {
@@ -147,9 +153,15 @@
   padding: 0;
   text-align: center;
   border: 1px solid $special-silver-chalice;
+  font-family: $base-f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
 }
 
 .cart__item-sum {
+  display: flex;
+  justify-content: flex-end;
   min-width: 100px;
   margin: 0;
   padding: 0;

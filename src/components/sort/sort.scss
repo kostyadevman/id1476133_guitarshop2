@@ -57,6 +57,7 @@
 
 .sort__button {
   fill: $special-dove-gray;
+  cursor: pointer;
 
   &--active {
     fill: $base-black
