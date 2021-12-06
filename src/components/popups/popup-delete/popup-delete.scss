@@ -64,3 +64,12 @@
   background-color: $base-white;
   cursor: pointer;
 }
+
+.popup-delete__close:hover,
+.popup-delete__close:focus {
+  opacity: .7;
+}
+
+.popup-delete__close:active {
+  opacity: .5;
+}
